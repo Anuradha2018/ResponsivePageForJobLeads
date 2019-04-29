@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+    url("fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+    url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")
+      format("svg");
+}
+
+@font-face {
+  font-family: "FSRegular";
+  src: url("fonts/FiraSans-Regular.eot");
+  src: url("fonts/FiraSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/FiraSans-Regular.ttf") format("truetype"),
+    url("fonts/fonts/FiraSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FSBold";
+  src: url("fonts/FiraSans-Medium.eot");
+  src: url("fonts/FiraSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/FiraSans-Medium.ttf") format("truetype"),
+    url("fonts/fonts/FiraSans-Medium.woff") format("woff");
+}
+
+.bgMobile {
+  display: none;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #30353b;
+  font-family: "FSRegular";
+}
+
+.main.container {
+  background: url("assets/mood.jpg") no-repeat;
+  background-size: cover;
+  height: 910px;
+  background-size: 126%;
+  background-position: 76% top;
+  max-width: 1119px;
+  padding-left: 32px;
+  padding-right: 0;
+}
+
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+.logo__link img {
+  background: #e3e3e4;
+  padding: 10px 15px;
+  margin-top: 32px;
+}
+
+.box {
+  margin-top: 25px;
+  width: 420px;
+}
+
+.box .box__content--title {
+  color: #fff;
+  background: #30353b;
+  padding: 15px 15px;
+  font-size: 22px;
+}
+
+.box .box__content--midlle {
+  background: #f1f1f2;
+  color: #535c65;
+  padding: 12px 12px;
+  font-family: "FSBold";
+}
+
+.box .box__content--midlle ul li {
+  padding-left: 23px;
+  font-size: 14px;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.box .box__content--midlle ul li .glyphicon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.box .box__content--midlle .divider {
+  border-top: 1px solid #dbdbdb;
+}
+
+.box .box__content--midlle .box__content--midlle--icon {
+  background: #bee716;
+  padding: 10px;
+  border-radius: 127px;
+  font-size: 37px;
+  font-weight: bold;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.box .box__content--midlle .box_content--middle--txt1 {
+  font-size: 43px;
+  color: #535c65;
+  margin-top: 18px;
+}
+
+.box .box__content--midlle .box_content--middle--txt1 del {
+  font-size: 16px;
+  margin-top: -12px;
+}
+
+.box .box__content--midlle .box_content--middle--txt2 {
+  font-size: 12px;
+}
+
+.box .box__content--midlle ul + div + div {
+  width: 305px;
+}
+
+.box .box__content--footer {
+  background: #ff7607;
+  padding: 18px 0px;
+  height: 63px;
+}
+
+.box .box__content--footer a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+}
+
+.box .box__content--footer a:hover {
+  font-size: 22px;
+}
+
+.popup {
+  background: url(img/bg.png);
+  width: 460px;
+  float: right;
+  color: #535c65;
+  z-index: 1;
+}
+
+.popup .popup__content {
+  padding: 30px 35px 35px 35px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.popup .popup__content--title {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.popup .divider {
+  border-top: 1px solid #707b87;
+  padding-bottom: 35px;
+}
+
+.popup .popup__close {
+  font-size: 15px;
+  float: right;
+  color: #535c65;
+}
+
+.popup .popup__content--content {
+  font-size: 12px;
+}
+
+.footer {
+  color: #ccc;
+  font-size: 14px;
+  padding: 6px 0 15px 0px;
+}
+
+.footer .copyright-mark {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 2px 3px 1px 3px;
+  vertical-align: super;
+  z-index: 0;
+}
+
+@media (max-width: 1119px) {
+  .main.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    height: auto;
+  }
+  .logo {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .logo .logo__link img {
+    margin-top: 0;
+    background-color: #ffffff;
+  }
+  .box {
+    width: auto;
+    margin-top: 0;
+  }
+  .box .bgMobile {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .box ul {
+    max-width: 420px;
+  }
+  .popup {
+    background: #fff;
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .box .bgMobile {
+    padding: 0;
+  }
+  .box .box__content--footer a {
+    font-size: 16px;
+  }
+  .box .box__content--footer a:hover {
+    font-size: 17px;
+  }
+  .popup {
+    position: absolute;
+    margin-bottom: 0;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .box {
+    background: url(assets/mood.jpg) no-repeat;
+    background-size: auto 280px;
+    background-position: 100% 125px;
+  }
+  .box .box__content--title {
+    padding-top: 4%;
+    min-height: 125px;
+  }
+  .box .bgMobile {
+    display: none;
+  }
+  .box .box__content--midlle {
+    width: 70%;
+    padding-top: 5%;
+  }
+  .box .box_content--middle--txt1 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .box .box_content--middle--txt1 ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
